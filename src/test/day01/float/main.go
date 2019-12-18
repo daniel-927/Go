@@ -10,5 +10,6 @@ func main() {
 	fmt.Printf("%T\n", f1) // 默认Go语言中的小树都是float64类型
 	f2 := float32(1.23456)
 	fmt.Printf("%T\n", f2) // 显示声明float32类型
-
+	// f1 = f2
+	
 }
