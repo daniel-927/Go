@@ -52,3 +52,4 @@ func switchDemo4() {
 func main() {
 	switchDemo4()
 }
+
