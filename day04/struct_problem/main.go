@@ -11,6 +11,11 @@ func (m myInt) hello() {
 	fmt.Println("a myInt")
 }
 
+type person struct {
+	name string
+	age  int
+}
+
 func main() {
 	// 声明一个int32类型的变量x,它的值是10
 	// 方法1:
@@ -38,10 +43,7 @@ func main() {
 	// m.hello()
 
 	// 问题2: 结构体初始化
-	type person struct {
-		name string
-		age  int
-	}
+
 	// 方法1
 	var p person // 声明一个person类型的变量p
 	p.name = "元帅"
@@ -65,4 +67,13 @@ func main() {
 	}
 	fmt.Println(p3)
 
+}
+
+// 问题3:为什么要有构造函数
+func newPerson(name string, age int) *person {
+	// 别人调用我,我能给她一个person类型的变量
+	return &person{
+		name: name,
+		age:  age,
+	}
 }
