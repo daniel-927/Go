@@ -36,9 +36,11 @@ func main() {
 	var a1 animal
 
 	c1 := cat{"tom", 4}
-	c2 := cat{"假老练", 4}
+	c2 := &cat{"假老练", 4}
 
-	a1 = &c1
-	a1 = &c2
+	a1 = &c1 // 实现animal这个接口的是cat的指针类型
 	fmt.Println(a1)
+	a1 = c2
+	fmt.Println(a1)
+	a1.move()
 }
