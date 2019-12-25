@@ -6,7 +6,7 @@ type student struct {
 	name string
 	age  int
 }
-
+// test
 func main() {
 	m := make(map[string]*student)
 	stus := []student{
