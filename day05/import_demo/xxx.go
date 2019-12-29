@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := zhoulin.Add(10, 20)
-	fmt.Println(ret)
+
+	fmt.Println(zhoulin.Add(10, 20))
 }
