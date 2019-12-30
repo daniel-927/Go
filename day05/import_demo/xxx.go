@@ -1,8 +1,8 @@
 package main
 
 import (
+	zhoulin "Go/day05/calc"
 	"fmt"
-	zhoulin "test/day05/calc"
 )
 
 func main() {
