@@ -4,10 +4,14 @@ import (
 	"Go/day06/mylogger"
 )
 
+var log mylogger.Logger // 声明一个全局的接口变量
+
 // 测试我们自己的日志库
 func main() {
 	// log := mylogger.Newlog("error")
-	log := mylogger.NewFileLogger("Info", "./", "zhoulinwang.log", 10*1024*1024)
+	log = mylogger.NewConsoleLogger("Info")                                     // 终端日志
+	log = mylogger.NewFileLogger("Info", "./", "zhoulinwang.log", 10*1024*1024) // 文件日志
+
 	for {
 		id := 100
 		name := "理想"
